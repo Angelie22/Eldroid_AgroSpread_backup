@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "923895097989",
+    "project_id": "agrospread-8fc21",
+    "storage_bucket": "agrospread-8fc21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923895097989:android:09086528608a5291c757ec",
+        "android_client_info": {
+          "package_name": "com.balugo.agrospreaddraft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5JauHxQi4kGieabEK_QoXu1rG2ZVMT6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923895097989:android:dd8ecbe262c96f99c757ec",
+        "android_client_info": {
+          "package_name": "com.balugo.agrospreaddraft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5JauHxQi4kGieabEK_QoXu1rG2ZVMT6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
