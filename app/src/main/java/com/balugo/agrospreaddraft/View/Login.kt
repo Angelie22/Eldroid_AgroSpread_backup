@@ -7,10 +7,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.balugo.agrospreaddraft.MainActivity
 import com.balugo.agrospreaddraft.R
 import com.balugo.agrospreaddraft.Model.AuthRepository
-import com.balugo.agrospreaddraft.Register
 import com.balugo.agrospreaddraft.ViewModel.LoginViewModel
 import com.balugo.agrospreaddraft.ViewModel.LoginViewModelFactory
 //import com.balugo.agrospreaddraft.navigation_menu.MainActivity
