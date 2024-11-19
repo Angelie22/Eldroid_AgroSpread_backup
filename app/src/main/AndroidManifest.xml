@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgroSpread"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".agrospread.View.Login"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.Welcome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".agrospread.View.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".agrospread.View.Register"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.DashboardFragment"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.StartSelling"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.OderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.FDetail"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.PDetail"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.SDetail"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.SeedDetail"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.SprinklerDetail"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.TDetail"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.Cart"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.Favorites"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.FertilizersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.PesticideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.SeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.ToolsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.PesticideDetail"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".agrospread.View.AllActivity"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

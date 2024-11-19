@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       >
+
+        <Button
+            android:id="@+id/backToAccountSecurityBtn"
+            style="@style/TransparentButton"
+            android:layout_width="50dp"
+            android:layout_height="62dp"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:padding="14dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/socialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/social_media_accounts"
+            android:padding="14dp"
+            android:layout_toEndOf="@+id/backToAccountSecurityBtn"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+    </RelativeLayout>
+
+    <!-- Facebook Link Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/facebook_link"
+        android:contentDescription="@string/facebook" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:text="@string/facebook"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnLinkFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:padding="8dp"
+            android:text="@string/link"
+            android:textColor="#008080"
+            android:textStyle="bold"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+</LinearLayout>
+
+        <!-- Google Link Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/google_link"
+            />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/google"
+        android:layout_marginStart="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnLinkGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/link_2"
+        android:textColor="#008080"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:padding="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    tools:context="agrospread.Welcome"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/AppLogo"
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_app_black_ver" />
+
+</RelativeLayout>

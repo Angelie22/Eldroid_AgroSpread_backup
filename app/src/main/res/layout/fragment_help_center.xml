@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="agrospread.HelpCenterFragment">
+
+    <!-- Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/backToSettingsHelpBtn"
+            style="@style/TransparentButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:padding="14dp"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/help_center_fragment"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/help_center_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_can_we_help_you_today"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!-- FAQ Button -->
+    <Button
+        android:id="@+id/button_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/faq"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#008080"
+        android:layout_marginBottom="16dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Contact Support Button -->
+    <Button
+        android:id="@+id/button_contact_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_support"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#008080"
+        android:layout_marginBottom="16dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Report a Problem Button -->
+    <Button
+        android:id="@+id/button_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/report_a_problem"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#008080"
+        android:layout_marginBottom="16dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>

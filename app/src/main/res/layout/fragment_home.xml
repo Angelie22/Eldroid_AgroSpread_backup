@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:padding="16dp"
+        android:src="@drawable/logo_app_black_ver"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- First ViewFlipper in CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessLeaf">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/slider_image1" />
+                </ViewFlipper>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/most_popular_products"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="230dp"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+            <!-- New Image and Button -->
+
+            <!-- Second ViewFlipper in CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/imageViewMiddle"
+                android:layout_below="@id/textView"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="4dp">
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoStart="true"
+                    android:flipInterval="2000"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right"
+                    tools:ignore="UselessLeaf">
+
+                    <ImageView
+                        android:id="@+id/imageViewProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/slider_image2" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/popular_products"/>
+                </ViewFlipper>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/viewProductsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewMiddle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:backgroundTint="#00AD90"
+                android:text="View Products" />
+
+
+            <!-- Third ViewFlipper in CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/viewProductsButton"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoStart="true"
+                    android:flipInterval="1050"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right"
+                    tools:ignore="UselessLeaf">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/seeds" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/fertilizer" />
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/pest" />
+                </ViewFlipper>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="900dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:layout_below="@id/textView"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/slider_image_about" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageView4"
+                android:layout_marginBottom="100sp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="©AgroSpread 2024 by Del Castillo, Balugo &amp; Suquib."/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
